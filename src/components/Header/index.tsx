@@ -1,4 +1,4 @@
-import style from './style.module.css'
+import style from './styles.module.css'
 
 import aplicationLogo from '../../assets/logo.svg'
 
