@@ -3,8 +3,9 @@ import styles from './styles.module.css'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement>{}
 
-export function Input({...props}: InputProps) {
+export function Input({type, ...props}: InputProps) {
+    console.log(type)
     return (
-        <input className={styles.input} {...props}/>
+        <input className={type === "checkbox" ? styles.checkbox : styles.input} {...props}/>
     )
 }
