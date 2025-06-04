@@ -5,7 +5,6 @@ import { EmptyList } from '../EmptyList';
 import { Task } from '../Task';
 import styles from './styles.module.css';
 
-
 export function Tasks() {
 
   const [tasks, setTasks] = useState<ITask[]>([])
@@ -65,7 +64,6 @@ export function Tasks() {
 
     setDescription("")
   }
-
 
   return (
     <div className={styles.container}>
